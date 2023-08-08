@@ -1,0 +1,120 @@
+ALGORITHM:
+1.Start
+2.Get the customer ID,set i=0
+3.Display "Please turn your page"
+4.Get user_input
+5.Check if user_input>0 then goto 6 else goto 7
+6.Assign i=i+1 goto 3
+7.Display 'Process Terminated! You have printed totally '+i+'pages.'
+8.Stop
+
+FLOWCHART:
+
+
+
+PSEUDO CODE:
+
+BEGIN 
+DECLARE uip,cid,i
+GET cid
+SET i=0
+DO
+	PRINT "Please turn your page"
+	GET uip
+	SET i=i+1
+UNTIL uip<=0
+PRINT 'Process Terminated! You have printed totally '+i+'pages.'
+END
+
+///////////////////////////////Assignment: Majesty Apartments///////////////////////////////
+
+ALGORITHM:
+1.Start
+2.Get the values of a and b
+3.Check whether a<=b,if yes goto 4 otherwise goto 10
+4.Set n=a%10
+5.Set n1=a/10%10
+6.Set n2=a/100%10
+7.If n+n2 is equal to n1 then goto 8 otherwise goto 9
+8.Display a 
+9.Set a =a+1 goto 3
+10.Stop
+
+FLOWCHART:
+
+
+PSEUDO CODE:
+BEGIN
+DECLARE a,b,n,n1,n2
+GET a,b
+WHILE b>a
+	n=a%10
+	n1=a/10%10
+	n2=a/100%10
+	IF n+n2==n1
+		PRINT a
+	a=a+1
+END WHILE
+END
+
+///////////////////////////////Assignment: Rhythm composing///////////////////////////////
+
+ALGORITHM:
+1.Start
+2.Set n=1
+3.Check whether n<=100 if yes goto 4 otherwise goto //////////////
+4.Set x=2,prime=0
+5.check whether x<=n/2 if yes goto 6 otherwise goto 8
+6.Check whether n%x==0,if yes increment prime by 1 goto 8 otherwise goto 7
+7.Set x=x+1,goto 5
+8.Check whether prime is equal to zero , if yes print n otherwise goto 9
+9.Set n=n+1 goto 3
+10.stop
+
+
+
+
+FLOWCHART:
+
+
+PSEUDO CODE:
+BEGIN
+
+DECLARE n=1,x,prime
+FOR n=1 TO 100 DO
+	SET prime=0,x=2
+	WHILE x<=n/2 
+		IF n % x==0 THEN
+			prime=prime+1
+		ENDIF
+		x=x+1
+	ENDWHILE
+	IF prime>0 THEN
+		PRINT n
+	ENDIF
+	n=n+1
+ENDFOR
+
+END
+
+///////////////////////////////Assignment: Leave calculation///////////////////////////////
+
+ALGORITHM
+1.Start
+2.Get n
+3.If n>20 OR n<0 goto 2 otherwise goto 4
+4.Display n+17
+4.stop
+FLOWCHART
+
+
+
+PSEUDO CODE
+BEGIN
+DECLARE n,new
+GET n
+WHILE n>20 || n<0
+	GET n
+ENDWHILE
+SET new=n+17
+END
